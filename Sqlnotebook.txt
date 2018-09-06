@@ -1,0 +1,40 @@
+
+SQL Query Basics
+1)	SELECT (row) FROM (column)          	 //single row
+2)	SELECT (row1),(row2),.. from (column)	 //multiple row
+3)	SELECT * FROM (column)         		//all rows
+4)	SELECT * FROM (column) limit (number)  //to limit quantity
+5)	SELECT DISTINCT (row) from (column)  //to select unique values
+6)	SELECT COUNT(*) FROM table;  //tells you how many rows in table that matches a specific criteria.
+7)	Where clause and  less than greater than operators
+8)	AND and OR keyword
+9)	BETWEEN keyword (select from certain range )  begin and end values are included. 
+SELECT MAX(gross) FROM films
+WHERE release_year BETWEEN 2000 AND 2012;
+
+10)	WHERE IN  Example (WHERE age IN (2, 4, 6, 8, 10);
+11)	NULL and IS NULL keyword (null represent missing values)
+12)	LIKE and NOT LIKE keyword  (like keyword use for pattern recognition)
+WHERE CustomerName LIKE 'a%' 				//syntax
+13)	% wildcard (The % wildcard will match zero, one, or many characters in text. )
+14)	_ wildcard (The _ wildcard will match a single character)
+WHERE CustomerName LIKE '_r%'  			//syntax
+15)	Aggregation functions (avg,max,min,sum) etc
+16)	Arithmetic symbols (+,-,/,*) 
+17)	AS keyword Aliases are helpful for making results more readable!
+18)	ORDER BY keyword  is used to sort results in ascending or descending order according to the values of one or more columns. By default ORDER BY will sort in ascending order. If you want to sort the results in descending order, you can use the DESC keyword.
+19)	GROUP BY keyword 
+The GROUP BY statement is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
+20)	HAVING keyword The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions. .
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);  //syntax
+21)	LIMIT keyword to limit the number of rows returned.
+Syntax    //LIMIT number
+ 
+22)	JOIN keyword
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
